@@ -11,7 +11,7 @@ void swap(int &a, int &b) {
     b = temp;
 }
 
-// creamos un funcion pa mezclar
+
 void mezclar(int* p, int* q) {
     // Mientras los punteros no sean iguales (no hemos terminado de recorrer el arreglo)
     while (p != q) {
@@ -23,7 +23,7 @@ void mezclar(int* p, int* q) {
                 }
             }
         }
-        p++;  // Avanzamos el puntero p
+        p++;  // Avanzamos puntero p
     }
 }
 

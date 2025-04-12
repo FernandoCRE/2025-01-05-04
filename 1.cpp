@@ -4,7 +4,7 @@ using namespace std;
 
 void mostrar(int* p, int tam);
 
-// intercambiar valores
+
 void swap(int &a, int &b) {
     int temp = a;
     a = b;
@@ -30,13 +30,13 @@ void mezclar(int* p, int* q) {
 // mostramos los elementos del arreglo
 void mostrar(int* p, int tam) {
     for (int i = 0; i < tam; i++) {
-        cout << *(p + i) << " ";  // usamos aritmetica de punteros para imprimir
+        cout << *(p + i) << " ";  // imprimimos
     }
     cout << endl;
 }
 
 int main() {
-    int a[] = {2, 4, 6, 8, 1, 3, 5, 7};  // Array original
+    int a[] = {2, 4, 6, 8, 1, 3, 5, 7};  
     int tam = sizeof(a) / sizeof(a[0]);     
 
     cout << "Array original: ";
@@ -45,7 +45,7 @@ int main() {
     mezclar(a, a + 4);   // Mezclar la primera mitad con la segunda
 
     cout << "Array después de mezclar ";
-    mostrar(a, tam);  // Muestra el arreglo después de la operación mezclar
+    mostrar(a, tam);  
 
     return 0;
 }
